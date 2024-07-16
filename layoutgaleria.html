@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+<!-- Declaração do tipo de documento como HTML e define o idioma da página como português -->
+
+<head>
+    <!-- Cabeçalho do documento -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura a viewport para garantir que a página seja responsiva -->
+    <title>Galeria de Fotos</title>
+    <!-- Define o título da página que será exibido na aba do navegador -->
+    <style>
+        /* CSS para estilizar a página */
+        body {
+            display: flex;
+            /* Define o corpo como um contêiner flexível */
+            flex-direction: column;
+            /* Coloca os filhos em uma coluna (de cima para baixo) */
+            justify-content: center;
+            /* Centraliza verticalmente o conteúdo */
+            align-items: center;
+            /* Centraliza horizontalmente o conteúdo */
+            margin: 0;
+            /* Remove a margem padrão do corpo */
+            height: 100vh;
+            /* Define a altura do corpo como 100% da altura da viewport */
+            background-color: #c3c3c3;
+            /* Define a cor de fundo do corpo */
+            font-family: Arial, sans-serif;
+            /* Define a fonte padrão do texto */
+        }
+
+        .title {
+            background-color: red;
+            /* Define a cor de fundo do título como vermelho */
+            width: 100%;
+            /* Define a largura do título como 100% da largura da página */
+            display: flex;
+            /* Define o título como um contêiner flexível */
+            justify-content: center;
+            /* Centraliza horizontalmente o conteúdo do título */
+            align-items: center;
+            /* Centraliza verticalmente o conteúdo do título */
+            padding: 10px;
+            /* Adiciona um espaçamento interno de 10px */
+        }
+
+        .title h1 {
+            margin: 0;
+            /* Remove a margem padrão do h1 */
+            color: #fff;
+            /* Define a cor do texto do h1 como branco */
+        }
+
+        .content {
+            display: flex;
+            /* Define o conteúdo como um contêiner flexível */
+            justify-content: center;
+            /* Centraliza horizontalmente o conteúdo */
+            width: 100%;
+            /* Define a largura do conteúdo como 100% da largura da página */
+        }
+
+        .gallery {
+            display: flex;
+            /* Define a galeria como um contêiner flexível */
+            flex-wrap: wrap;
+            /* Permite que os itens da galeria quebrem para a próxima linha se necessário */
+            gap: 10px;
+            /* Define um espaçamento de 10px entre os itens da galeria */
+            max-width: 800px;
+            /* Define a largura máxima da galeria como 800px */
+            padding: 10px;
+            /* Adiciona um espaçamento interno de 10px */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 10px);
+            /* Define que cada item da galeria deve crescer, encolher e ter uma largura inicial de 33.333% menos 10px */
+            box-sizing: border-box;
+            /* Inclui padding e bordas na largura e altura total do item */
+        }
+
+        .gallery img {
+            width: 100%;
+            /* Define a largura das imagens como 100% do contêiner pai (gallery-item) */
+            height: auto;
+            /* Define a altura das imagens de forma automática para manter a proporção */
+            object-fit: cover;
+            /* Ajusta a imagem para cobrir totalmente o contêiner pai, podendo cortar parte da imagem */
+            transition: transform 0.3s ease;
+            /* Adiciona uma transição suave */
+        }
+
+        button {
+            background-color: red;
+            color: white;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Corpo do documento -->
+    <div class="title">
+        <!-- Seção do título -->
+        <h1>GALERIA</h1>
+        <!-- Cabeçalho da galeria -->
+    </div>
+    <div>
+        <button>TESTE</button>
+    </div>
+    <div class="content">
+        <!-- Seção principal do conteúdo -->
+        <div class="gallery">
+            <!-- Contêiner da galeria de fotos -->
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/fotos-gratis/pessoa-andando-de-moto-poderosa_23-2150704855.jpg"
+                    alt="Foto 1" />
+                <!-- Imagem 1 da galeria -->
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/fotos-gratis/pessoa-andando-de-moto-poderosa_23-2150704855.jpg"
+                    alt="Foto 2" />
+                <!-- Imagem 2 da galeria -->
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/fotos-gratis/pessoa-andando-de-moto-poderosa_23-2150704855.jpg"
+                    alt="Foto 3" />
+                <!-- Imagem 3 da galeria -->
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/fotos-gratis/pessoa-andando-de-moto-poderosa_23-2150704855.jpg"
+                    alt="Foto 4" />
+                <!-- Imagem 4 da galeria -->
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/fotos-gratis/pessoa-andando-de-moto-poderosa_23-2150704855.jpg"
+                    alt="Foto 5" />
+                <!-- Imagem 5 da galeria -->
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/fotos-gratis/pessoa-andando-de-moto-poderosa_23-2150704855.jpg"
+                    alt="Foto 6" />
+                <!-- Imagem 6 da galeria -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
