@@ -42,9 +42,27 @@
             margin-left: 20px; /* Adiciona uma margem à esquerda para separar dos outros elementos */
         }
 
+        .container2 {
+            display: flex;
+            justify-content: baseline;
+        }
+
+        .item {
+            /* background-color: lightblue; */
+            padding: 20px;
+            margin: 10px;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+                 
         footer {
             text-align: center; /* Centraliza o texto dentro do elemento footer */
             margin-top: 20px; /* Adiciona uma margem superior para separar do conteúdo anterior */
             padding-top: 10px; /* Adiciona preenchimento interno na parte superior */
             border-top: 1px solid #ddd; /* Adiciona uma linha fina no topo do elemento */
         }
+ 

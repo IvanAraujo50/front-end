@@ -1,0 +1,33 @@
+/* Estilos básicos para dispositivos móveis */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    line-height: 1.6; /* Define a altura da linha */
+}
+
+header, footer {
+    background: #333; /* Cor de fundo para cabeçalho e rodapé */
+    color: #fff; /* Cor do texto para cabeçalho e rodapé */
+    text-align: center; /* Alinhamento do texto centralizado */
+    padding: 1em 0; /* Espaçamento interno de 1em acima e abaixo */
+}
+
+main {
+    padding: 1em; /* Espaçamento interno para o conteúdo principal */
+}
+
+/* Media Queries para telas maiores que 768px */
+@media (min-width: 768px) {
+    main {
+        max-width: 750px; /* Largura máxima do conteúdo principal */
+        margin: 0 auto; /* Centraliza o conteúdo na tela */
+    }
+}
+
+/* Media Queries para telas maiores que 1024px */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1000px; /* Largura máxima do conteúdo principal */
+    }
+}

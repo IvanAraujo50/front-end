@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    background-color: #243413; /* Define a cor de fundo */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #a12828; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 1em 0; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Alinhamento do texto centralizado */
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    padding: 1em; /* Espaçamento interno do contêiner */
+}
+
+.titulo {
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo para o conteúdo principal */
+.content {
+    background-color: #ffffff; /* Cor de fundo do conteúdo */
+    color: #6a7d00;
+    padding: 2em; /* Espaçamento interno do conteúdo */
+    margin: 1em 0; /* Margem superior e inferior do conteúdo */
+    border-radius: 8px; /* Raio da borda do conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: justify;
+}
+
+/* Estilo para os parágrafos dentro do conteúdo */
+.content p {
+    font-weight: bold; /* Texto em negrito */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: center;
+    color: #6a7d00;
+    
+}
+
+/* Estilo para imagens */
+img {
+    width: 300px; /* Largura máxima das imagens */
+    display: block; /* Para garantir que a margem auto funcione corretamente */
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo para a legenda */
+.legend {
+    margin-bottom: 15px; /* Margem inferior da legenda */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #4b4e10; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    text-align: center; /* Alinhamento do texto centralizado */
+    padding: 1em 0; /* Espaçamento interno do rodapé */
+    width: 100%; /* Largura total */
+    bottom: 0; /* Alinhamento na parte inferior */
+}
+
+/* Media query para telas maiores que 768px */
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px; /* Largura máxima do contêiner */
+        margin: 0 auto; /* Centraliza o contêiner na tela */
+    }
+}
+
+.photo-types img:hover {
+    transform: scale(1.1);
+}
+
+.photo-types img {
+    width: 50%;
+    /* Define a largura das imagens como 100% do contêiner pai (gallery-item) */
+    height: auto;
+    /* Define a altura das imagens de forma automática para manter a proporção */
+    object-fit: cover;
+    /* Ajusta a imagem para cobrir totalmente o contêiner pai, podendo cortar parte da imagem */
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição suave */
+}
+.photo-type {
+    flex: 1 1 calc(33.333% - 10px);
+    /* Define que cada item da galeria deve crescer, encolher e ter uma largura inicial de 33.333% menos 10px */
+    box-sizing: border-box;
+    /* Inclui padding e bordas na largura e altura total do item */
+}
