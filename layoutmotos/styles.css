@@ -7,10 +7,15 @@ body {
 
 /* Estilo para o cabeçalho */
 header {
-    background-color: #a12828; /* Cor de fundo do cabeçalho */
+    background-image: url(https://www.eb.mil.br/documents/42208/0/WhatsApp+Image+2024-07-04+at+16.53.05.jpeg/5bcf34f7-2615-9059-df01-436b1d9ed450?t=1720112208478);
     color: #fff; /* Cor do texto no cabeçalho */
     padding: 1em 0; /* Espaçamento interno do cabeçalho */
     text-align: center; /* Alinhamento do texto centralizado */
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 /* Estilo para o contêiner principal */
@@ -93,3 +98,71 @@ footer {
     box-sizing: border-box;
     /* Inclui padding e bordas na largura e altura total do item */
 }
+
+/* Estilo do logo:
+- Cor do texto branca (#fff)
+- Remove sublinhado (text-decoration: none)
+- Tamanho da fonte 1.5rem
+- Texto em negrito (font-weight: bold) */
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+/* Estilo da imagem do logo:
+- Largura de 120px
+- Transição suave ao passar o mouse (transition: transform 0.3s) */
+.logo img {
+    width: 50px;
+    transition: transform 0.3s;
+  }
+  
+  /* Estilo da imagem do logo ao passar o mouse:
+  - Aumenta o tamanho em 20% (transform: scale(1.2)) */
+  .logo img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Estilo do link do logo ao passar o mouse:
+  - Cor muda para amarelo (#f1c40f) */
+  .logo a:hover {
+    color: #f1c40f;
+  }
+
+  /* Estilo da lista de links de navegação:
+- Remove bullets (list-style-type: none)
+- Display flex para layout horizontal */
+.nav-links {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+  
+  /* Estilo dos itens da lista de links de navegação:
+  - Margem direita de 15px para espaçamento entre links */
+  .nav-links li {
+    margin: 10px;
+  }
+  
+  /* Estilo dos links:
+  - Remove sublinhado (text-decoration: none)
+  - Cor do texto preta (#000)
+  - Texto em negrito (font-weight: bold)
+  - Transição suave de cor ao passar o mouse (transition: color 0.3s ease)
+  - Tamanho da fonte 30px */
+  .nav-links li a {
+    text-decoration: none;
+    color: #243413;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 25px;
+  }
+  
+  /* Estilo dos links ao passar o mouse:
+  - Cor muda para amarelo (#f1c40f) */
+  .nav-links li a:hover {
+    color:#4b4e10
+  }
