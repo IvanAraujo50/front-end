@@ -15,6 +15,7 @@ header {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    /* position: fixed; */
 
 }
 
@@ -155,7 +156,7 @@ footer {
   - Tamanho da fonte 30px */
   .nav-links li a {
     text-decoration: none;
-    color: #243413;
+    color: #ffffff;
     font-weight: bold;
     transition: color 0.3s ease;
     font-size: 25px;
