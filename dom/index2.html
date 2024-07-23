@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação do DOM</title>
+</head>
+<body>
+  <!-- Container inicial com um parágrafo -->
+  <div id="container">
+    <p>Texto inicial.</p>
+  </div>
+
+  <!-- Botões para adicionar e remover elementos -->
+  <button onclick="adicionarElemento()">Adicionar Elemento</button>
+  <button onclick="removerElemento()">Remover Elemento</button>
+
+  <script>
+    // Função para adicionar um novo elemento ao container
+    function adicionarElemento() {
+      // Cria um novo elemento <p>
+      let novoElemento = document.createElement('p');
+      // Define o texto do novo elemento
+      novoElemento.textContent = 'Novo texto adicionado.';
+      
+      // Seleciona o container onde o novo elemento será adicionado (por ID)
+      let container = document.getElementById('container');
+      
+      // Adiciona o novo elemento como um filho do container
+      container.appendChild(novoElemento);
+    }
+
+    // Função para remover o último elemento filho do container
+    function removerElemento() {
+      // Seleciona o container pelo ID
+      let container = document.getElementById('container');
+      // Seleciona o último elemento filho do container
+      let ultimoElemento = container.lastChild;
+      
+      // Remove o último elemento filho do container
+      container.removeChild(ultimoElemento);
+    }
+  </script>
+</body>
+</html>
