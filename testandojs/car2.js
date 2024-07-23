@@ -23,4 +23,4 @@ class Car {
 
     const meuCarroEletrico = new EletriCar('Tesla', 'Model S', 2022, 100);
     console.log(meuCarroEletrico.exibirInfo()); // Carro: Tesla Model S (2022)
-    console.log(meuCarroEletrico.exibirBateria()); // Nível da bateria: 100%
+    console.log(meuCarroEletrico.exibirBateria()); // Nível da bateria: 100% 
