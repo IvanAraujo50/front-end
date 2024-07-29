@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar CEP</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/location.ico">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <img src="./assets/images/location.png" alt="Logo" class="logo">
+    <div class="container">
+        <h1>Buscar CEP</h1>
+        <label for="cepInput">Digite um CEP, somente os números</label>
+        <br>
+        <input type="text" id="cepInput" name="cepInput" maxlength="9" pattern="\d{5}-\d{3}" title="Digite um CEP válido (XXXXX-XXX)" required>
+        <button id="fetchCepButton">Buscar</button>
+        <div id="cepDetails" class="cep-details">
+            <!-- Aqui serão exibidos os detalhes do endereço -->
+        </div>
+    </div>
+    <footer>
+        Site produzido pelo Aluno.<br/>
+        <b>Ivan Araújo Silva</b>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

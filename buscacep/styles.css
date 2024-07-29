@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/rawline');
+
+body {
+    font-family: 'Rawline', sans-serif;
+    color: #000000;
+    margin: 0;
+    background-image: url('./assets/images/background.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #251414; /* Cor de fundo para contrastar com o container */
+}
+.wrapper {
+    text-align: center; /* Centraliza a logo e o container */
+}
+
+.logo {
+    width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+    margin-bottom: 20px; /* Espaçamento entre a logo e o container */
+    transition: transform 0.3s ease; /* Suaviza a transição do efeito de zoom */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Aumenta a logo em 10% */
+}
+
+.container {
+    background-color: rgba(218, 218, 218, 0.4); /* Cor de fundo com 40% de opacidade */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um efeito de profundidade */
+    padding: 20px;
+    width: 300px; /* Largura do container */
+    text-align: center; /* Centraliza o texto e os elementos */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    position: relative; /* Necessário para a animação */
+    overflow: hidden; /* Garante que a animação não ultrapasse o container */
+    animation: bordaLoop 2s infinite linear; /* Adiciona a animação da borda */
+}
+
+@keyframes bordaLoop {
+    0% {
+        box-shadow: 0 0 0 3px rgba(235, 28, 28, 0.7);
+    }
+    25% {
+        box-shadow: 0 0 0 6px rgba(235, 28, 28, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 3px rgba(235, 28, 28, 0.7);
+    }
+    75% {
+        box-shadow: 0 0 0 6px rgba(235, 28, 28, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 0 3px rgba(235, 28, 28, 0.7);
+    }
+}
+
+/* Estilo para a label associada ao characterInput */
+label[for="characterInput"] {
+    color: #ffffff; /* Altere para a cor desejada */
+    font-size: 16px; /* Ajuste o tamanho da fonte se necessário */
+    font-family: 'Rawline', sans-serif; /* Ajuste a fonte se necessário */
+}
+.container h1 {
+    margin: 0 0 20px 0; /* Espaço abaixo do título */
+    color: #ffffff;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px; /* Espaço abaixo do label */
+}
+
+.container input {
+    padding: 10px;
+    margin-bottom: 15px; /* Espaço entre o campo de entrada e o botão */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(75% - 22px); /* Ajusta a largura para o padding */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+}
+
+.container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eb1c1c; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    cursor: pointer;
+    font-size: 16px;
+    width: auto /* Largura completa para o botão */
+}
+
+.container button:hover {
+    background-color: #820e0e; /* Cor do botão quando o cursor está sobre ele */
+}
+
+.character-details {
+    margin-top: 20px; /* Espaço acima da área de detalhes */
+}
+
+.character-img {
+    width: 150px; /* Ajuste conforme necessário */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.character-img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
+
+footer {
+    color: #FFF;
+    padding: 50px;
+    text-align: center;
+    font-size: 12px;
+}
