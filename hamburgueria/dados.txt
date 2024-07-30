@@ -1,0 +1,22 @@
+https://api.whatsapp.com/send?phone=5561991771623&text=Teste
+
+
+Big Mac
+Duplo Quarterão
+
+
+amarelo: #ffbc0d
+vermelho: #db0007
+
+
+Big Mac
+499 kcal
+Dois hambúrgueres (100% carne bovina), alface americana, queijo processado sabor cheddar, molho especial, cebola, picles e pão com gergelim.
+
+Duplo Quarterão
+819 kcal
+Dois hambúrgueres (carne 100% bovina), mostarda, ketchup, cebola, queijo processado sabor cheddar e pão com gergelim.
+
+Triplo Burger
+545 kcal
+Três hambúrgueres (carne 100% bovina), queijo processado sabor cheddar, cebola, picles, ketchup, mostarda e pão com gergelim.

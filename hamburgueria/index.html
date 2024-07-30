@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <!-- Link para o CSS personalizado (opcional) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo ao Nosso Serviço</h1>
+            <p class="lead">Oferecemos soluções inovadoras para suas necessidades.</p>
+            <a href="#contact" class="btn btn-light btn-lg">Saiba Mais</a>
+        </div>
+    </header>
+
+    <!-- Seção de Recursos -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/bigmac.png" alt="img1">
+                            <h5 class="card-title">Big Mac</h5>
+                            <p class="card-text">499 kcal <br>
+                                Dois hambúrgueres (100% carne bovina), alface americana, queijo processado sabor cheddar, molho especial, cebola, picles e pão com gergelim.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/duploquarterao.png" alt="">
+                            <h5 class="card-title">Duplo Quarterão</h5>
+                            <p class="card-text">819 kcal <br>
+                                Dois hambúrgueres (carne 100% bovina), mostarda, ketchup, cebola, queijo processado sabor cheddar e pão com gergelim.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/triploburger.png" alt="">
+                            <h5 class="card-title">Triplo Burger</h5>
+                            <p class="card-text">545 kcal <br>
+                                Três hambúrgueres (carne 100% bovina), queijo processado sabor cheddar, cebola, picles, ketchup, mostarda e pão com gergelim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Faça seu pedido!</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Seu Nome">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Seu Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Sua Mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; McDonald's 2024. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
